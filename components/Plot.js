@@ -1,11 +1,10 @@
-import Link from 'next/link'
+import Link from "next/link"
+
 
 export default function Plot() {
     return (
-        <div className="square">
-            <Link href={props.href}> 
-            <a>{props.pageTitle}</a>
-            </Link>
+        <div className="plot">
+            <Link href="/about">About</Link>
         </div>
     )
 }

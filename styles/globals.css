@@ -11,17 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  /* padding: 1rem 0; */
-  flex: 1;
-  display: flex;
-  margin: 1rem;
-  border: solid black 2px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px;
-}
 
 code {
   background: #fafafa;
@@ -39,11 +28,23 @@ code {
   align-items: center;
 }
 
-.territory{
+.card{
+  margin: 1rem;
+  border: solid black 2px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.stack-top{
+  position: absolute;
+  border: solid 2px black;
+  z-index: 100;
+  opacity: 1;
+
+}
 .plot{
   border: solid 2px black;
 }
