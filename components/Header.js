@@ -1,4 +1,8 @@
-import styles from "./Header.module.css"
+
+
 export default function Header({ title }) {
-  return <h1 className={styles.title}>{title}</h1>
+  return <h1>
+    {title}
+  <style jsx>{`h1 { color: red;}`}</style>
+  </h1>
 }

@@ -20,31 +20,26 @@ code {
 }
 
 .container {
-  height: 10 rem;
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: min(600px, 100%);
+  height: min(800px, 85%);
 }
 
 .card{
-  margin: 1rem;
+  position:fixed;
+  background-color: white;
   border: solid black 2px;
-  justify-content: center;
-  align-items: center;
   box-shadow: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 300px;
+  height: 400px;
+
 }
 
 .stack-top{
-  position: absolute;
-  border: solid 2px black;
-  z-index: 100;
+  position: fixed;
+  border: solid 1px black;
   opacity: 1;
-
-}
-.plot{
-  border: solid 2px black;
 }
