@@ -9,7 +9,7 @@ import {
 
 
 function Application({ Component, pageProps }) {
-  const [state, dispatch] = useReducer(frameReducer, { frames: 0 });
+  const [state, dispatch] = useReducer(frameReducer, { frames: [{x: '50%', y:'50%'}] });
   return (
 
     <FrameContext.Provider value={state}>
