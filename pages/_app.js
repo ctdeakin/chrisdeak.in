@@ -5,16 +5,17 @@ import {
   FrameContext,
   DispatchContext,
 } from '@components/context/FrameContext';
-
-
+import Container from '@components/Container';
 
 function Application({ Component, pageProps }) {
-  const [state, dispatch] = useReducer(frameReducer, { frames: [{x: '50%', y:'50%'}] });
+  const [state, dispatch] = useReducer(frameReducer, { frames: [] });
   return (
 
     <FrameContext.Provider value={state}>
       <DispatchContext.Provider value={dispatch}>
+        <Container>
         <Component {...pageProps} />
+        </Container>
       </DispatchContext.Provider>
     </FrameContext.Provider>
 

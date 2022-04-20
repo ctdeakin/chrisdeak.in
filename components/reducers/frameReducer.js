@@ -15,7 +15,6 @@ export const handleRemoveFrame = (dispatch) => {
 };
 
 export const frameReducer = (state, action) => {
-    console.log('state:', state)
   switch (action.type) {
     case 'addFrame':
       return { frames: [generateTranslation(), ...state.frames] };

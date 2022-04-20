@@ -9,15 +9,23 @@ export default function Frame({ children }) {
       return children;
     }
 
-    let {x, y} = f.pop()
+    let { x, y } = f.pop();
     return (
       <>
-      <div className="card frame">  
-      {createFrame(f)}
-      <style jsx>{`.frame { position: fixed; transform: translate(${x + ', ' + y})}`}</style>
-      </div>
-  
+        <div className="card frame">
+        {createFrame(f)}
+          <style jsx>{`
+            .frame {
+              position: relative;
+              left:${x};
+              top:${y};
+             
+            }
+          `}</style>
+        </div>
+
         
+
       </>
     );
   }

@@ -25,21 +25,24 @@ code {
   left:50%;
   transform: translate(-50%, -50%);
   width: min(600px, 100%);
-  height: min(800px, 85%);
+  height: min(400px, 85%);
+  
 }
 
 .card{
   position:fixed;
   background-color: white;
-  border: solid black 2px;
-  box-shadow: 10px;
+  border-style: solid;
+  border-color: rgb(63, 88, 165);
+  border-radius: 7px;
+  border-width: 1px 1px 5px 5px;
   width: 300px;
   height: 400px;
 
 }
 
-.stack-top{
-  position: fixed;
-  border: solid 1px black;
-  opacity: 1;
+.stack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

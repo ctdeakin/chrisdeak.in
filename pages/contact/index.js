@@ -12,6 +12,7 @@ export default function About() {
   useEffect(() => {
     handleAddFrame(dispatch);
   }, []);
+
   return (
     <Frame>
       <Link href="/">Back</Link>
