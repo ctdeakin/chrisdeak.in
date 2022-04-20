@@ -24,15 +24,6 @@ export default function Island() {
       <Link href="/contact" >
         <a>Contact</a>
       </Link>
-      <style jsx>{`
-        a {
-          text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: inherit;
-        }
-      `}</style>
     </Frame>
   );
 }

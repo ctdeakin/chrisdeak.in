@@ -11,13 +11,40 @@ body {
 }
 
 a {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: large;
+  font-weight:300;
   text-decoration: none;
+  color:black;
 }
 
 a:hover {
+  font-size: large;
+  font-weight:300;
   background-color: aliceblue;
 }
 
+a:visited {
+  text-decoration: none;
+  font-size: large;
+  font-weight:300;
+  color:black;
+}
+
+button {  
+  font-size: large;
+  font-weight:300;
+  border: 0;
+  background-color: white;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+.nav-buttons {
+  text-align:center;
+}
 code {
   background: #fafafa;
   border-radius: 5px;
@@ -52,4 +79,26 @@ code {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+}
+
+form {
+  font-family:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+input {
+  width:100%;
+  border-radius: 5px;
+  border: solid royalblue 1px;
+}
+
+textarea{
+  border-radius: 5px;
+  border: solid royalblue 1px;
+  width: 100%;
+  resize:none;
+}
+
+label{
+  font-size: large;
+  font-weight:300;
 }

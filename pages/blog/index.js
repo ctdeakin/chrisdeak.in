@@ -17,7 +17,7 @@ export default function About() {
         <p>
             Under Construction
         </p>
-      <Link href="/">Back</Link>
+      <Link href="/">←</Link>
     </Frame>
   );
 }

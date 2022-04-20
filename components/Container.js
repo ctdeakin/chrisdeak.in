@@ -1,4 +1,4 @@
-export default function Card({ children }) {
+export default function Container({ children }) {
 
   return (
       <div className="container">

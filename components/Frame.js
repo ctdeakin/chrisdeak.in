@@ -16,7 +16,7 @@ export default function Frame({ children }) {
         {createFrame(f)}
           <style jsx>{`
             .frame {
-              position: relative;
+              position: fixed;
               left:${x};
               top:${y};
              

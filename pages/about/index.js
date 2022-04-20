@@ -14,7 +14,12 @@ export default function About() {
   }, []);
   return (
     <Frame>
-      <Link href="/">Back</Link>
+        <p>
+            <a>Linked In</a>
+            <a>Github</a>
+
+        </p>
+      <Link href="/">←</Link>
     </Frame>
   );
 }
