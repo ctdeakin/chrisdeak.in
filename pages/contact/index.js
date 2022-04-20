@@ -21,7 +21,6 @@ export default function About() {
       <form
         name="contact"
         method="POST"
-        action="contact/?success=true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
@@ -45,7 +44,7 @@ export default function About() {
              <button type="submit">Send</button>
         </span>
       </form>
-      
+
       <Link href="/"><a>←</a></Link>
         
     </Frame>
