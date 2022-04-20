@@ -14,11 +14,7 @@ export default function About() {
   }, []);
   return (
     <Frame>
-        <p>
-            <a>Linked In</a>
-            <a>Github</a>
-
-        </p>
+      <p>Lover, Reader, JavaScript Developer</p>
       <Link href="/">←</Link>
     </Frame>
   );

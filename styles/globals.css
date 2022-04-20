@@ -4,6 +4,7 @@ body {
   margin: 0;
   border: 1rem;
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color:rgb(219, 236, 250);
 }
 
 * {
@@ -21,7 +22,8 @@ a {
 a:hover {
   font-size: large;
   font-weight:300;
-  background-color: aliceblue;
+  background-color: rgb(219, 236, 250);
+  box-shadow:inset 0 -2px rgb(63, 88, 165);
 }
 
 a:visited {
@@ -39,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: aliceblue;
+  background-color: rgb(219, 236, 250);
 }
 
 .nav-buttons {
@@ -80,6 +82,11 @@ code {
   align-items: center;
   justify-content: center;
   padding: 10px;
+}
+
+.profile-links{
+  display:flex;
+  justify-content:center;
 }
 
 form {

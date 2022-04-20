@@ -14,39 +14,14 @@ export default function About() {
     handleAddFrame(dispatch);
   }, []);
 
-  const router = useRouter()
-  console.log(router?.query.success)
   return (
     <Frame>
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-          <span hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" />
-          </label>
-        </span>
-        <span>
-          <label>Name
-          <input type="text" name="name" />
-          </label>
-          <label>Email
-          <input type="email" name="email" />
-          </label>
-          <label>Message
-          <textarea name="message"></textarea>
-          </label>
-        </span>
-        <span>
-             <button type="submit">Send</button>
-        </span>
-      </form>
-
-      <Link href="/"><a>←</a></Link>
-        
+        <a href="https://linkedin.com/in/christopher-deakin">LinkedIn</a>
+        <a href="https://github.com/ctdeakin">Github</a>
+        <a href="mailto:cd@chrisdeak.in">Email</a>
+      <Link href="/">
+        <a>←</a>
+      </Link>
     </Frame>
   );
 }
