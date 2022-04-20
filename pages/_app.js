@@ -6,6 +6,7 @@ import {
   DispatchContext,
 } from '@components/context/FrameContext';
 import Container from '@components/Container';
+import "@ibm/plex" 
 
 function Application({ Component, pageProps }) {
   const [state, dispatch] = useReducer(frameReducer, { frames: [] });
