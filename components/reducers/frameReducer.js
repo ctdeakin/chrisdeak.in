@@ -1,5 +1,5 @@
 const generateTranslation = () => {
-  return { x: Math.random() * 20 - 10 + '%', y: Math.random() * 20 - 10 + '%' };
+  return { x: Math.random() * 10 - 5 + '%', y: Math.random() * 10 - 5 + '%' };
 };
 
 export const handleAddFrame = (dispatch) => {

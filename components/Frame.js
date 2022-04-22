@@ -10,16 +10,17 @@ export default function Frame({ children }) {
     }
 
     let { x, y } = f.pop();
+    console.log(x, y)
     return (
       <>
         <div className="card frame">
         {createFrame(f)}
           <style jsx>{`
             .frame {
-              position: fixed;
+              position: absolute;
               left:${x};
               top:${y};
-             
+              
             }
           `}</style>
         </div>

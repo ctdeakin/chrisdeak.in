@@ -56,16 +56,15 @@ code {
 
 .container {
   position:fixed;
-  top:50%;
+  top:25%;
   left:50%;
   transform: translate(-50%, -50%);
-  width: min(600px, 100%);
-  height: min(400px, 85%);
+  width: min(300px, 85%);
+  height: min(200px, 50%);
   
 }
 
 .card{
-  position:fixed;
   background-color: white;
   border-style: solid;
   border-color: rgb(63, 88, 165);
