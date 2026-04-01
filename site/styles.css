@@ -15,14 +15,15 @@ body {
 
 a {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: large;
+  font-size: 1em;
   font-weight: 300;
   text-decoration: none;
   color: black;
+  display: block;
+  margin: 0.25em 0;
 }
 
 a:hover {
-  font-size: large;
   font-weight: 300;
   background-color: rgb(219, 236, 250);
   box-shadow: inset 0 -2px rgb(63, 88, 165);
@@ -30,7 +31,6 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  font-size: large;
   font-weight: 300;
   color: black;
 }
@@ -62,8 +62,16 @@ a:visited {
   padding: 10px;
 }
 
-h2 {
-  font-size: 1.2em;
+header {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 0 1em;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 0.95em;
   font-weight: 300;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.75em;
+  color: rgb(60, 60, 60);
 }
