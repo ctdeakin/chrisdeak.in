@@ -30,6 +30,7 @@ function loadPosts() {
   try {
     return JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   } catch (e) {
+    savePosts([]);
     return [];
   }
 }
