@@ -10,9 +10,23 @@
 <body>
   <div class="container"></div>
   <div id="page-content" style="display:none">
-    <p>Coming soon</p>
+    <div id="post-list"><p>Loading...</p></div>
     <a href="/">←</a>
   </div>
   <script src="/frame.js"></script>
+  <script>
+    fetch('/api/posts')
+      .then(function(r) { return r.json(); })
+      .then(function(posts) {
+        var list = document.getElementById('post-list');
+        if (!posts.length) {
+          list.innerHTML = '<p>No posts yet.</p>';
+        } else {
+          list.innerHTML = posts
+            .map(function(p) { return '<a href="/blog/' + p.slug + '">' + p.title + '</a>'; })
+            .join('');
+        }
+      });
+  </script>
 </body>
 </html>
